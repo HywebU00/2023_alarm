@@ -206,6 +206,10 @@ body::-webkit-scrollbar-track {
                 margin-bottom: .5em;
                 border-radius: 8px;
                 overflow: hidden;
+                span{
+                    display: inline-block;
+                    width: 26px;
+                }
                 img{
                     flex: 0 0 20px;
                     height: 20px;
@@ -798,6 +802,11 @@ body::-webkit-scrollbar-track {
         border-radius: 10px;
         margin: 20px 0;
         padding: 1em 2em;
+        h4{
+            span{
+                flex: 0 0 42px;
+            }
+        }
 
         &:nth-child(3n+2){
             margin-left: 30px;

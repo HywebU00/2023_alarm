@@ -2715,6 +2715,11 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   width: 70%;
   margin: 3em auto !important;
 }
+@media screen and (max-width: 767px) {
+  .setCenter {
+    width: 100%;
+  }
+}
 
 .checkSwitch {
   box-sizing: content-box;
@@ -3127,6 +3132,7 @@ select::-ms-expand {
     max-width: calc(100% - 0.6em);
     flex-basis: calc(100% - 0.6em);
     margin: 0 0.3em;
+    text-align: left;
     position: relative;
     min-height: 1px;
     padding-left: 0;
@@ -5464,6 +5470,10 @@ body::-webkit-scrollbar-track {
   overflow: hidden;
   position: relative;
 }
+.menu ul li a span {
+  display: inline-block;
+  width: 26px;
+}
 .menu ul li a img {
   flex: 0 0 20px;
   height: 20px;
@@ -5994,6 +6004,9 @@ body::-webkit-scrollbar-track {
   border-radius: 10px;
   margin: 20px 0;
   padding: 1em 2em;
+}
+.usage .col h4 span {
+  flex: 0 0 42px;
 }
 .usage .col:nth-child(3n+2) {
   margin-left: 30px;

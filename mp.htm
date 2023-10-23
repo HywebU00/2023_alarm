@@ -35,20 +35,28 @@
           <button type="button" class="sidebarCtrl">側欄選單<span></span><span></span><span></span></button>
           <nav class="menu" role="navigation" aria-label="Header的導航列">
             <ul>
+              <li><a href="#"><img src="images/icon_.svg" alt="">首頁</a></li>
               <li><a href="#" class="act"><img src="images/icon_Home.svg" alt="">安控儀表板</a></li>
-              <li><a href="#"><img src="images/icon_Analyze.svg" alt="">主機監控設定維護</a></li>
-              <li><a href="#"><img src="images/icon_Account.svg" alt="">主機權限管理</a></li>
-              <li><a href="#"><img src="images/icon_ActivityHistory.svg" alt="">監控歷史紀錄檔查詢</a></li>
-              <li><a href="#"><img src="images/icon_LowConnection.svg" alt="">網路流量查詢</a></li>
-              <li><a href="#"><img src="images/icon_Support.svg" alt="">派修回報功能</a></li>
-              <li><a href="#"><img src="images/icon_Worker.svg" alt="">派修人員維護</a></li>
-              <li><a href="#"><img src="images/icon_Settings.svg" alt="">報修清單查詢</a></li>
+              <li><a href="#"><span>1.</span>系統主檔新增作業</a></li>
+              <li><a href="#"><span>2.</span>系統主檔維護</a></li>
+              <li><a href="#"><span>3.</span>主機監控設定維護</a></li>
+              <li><a href="#"><span>4.</span>歷史紀錄檔查詢</a></li>
+              <li><a href="#"><span>5.</span>網路流量查詢</a></li>
+              <li><a href="#"><span>6.</span>主機權限管理</a></li>
+              <li><a href="#"><span>7.</span>派修人員維護</a></li>
+              <li><a href="#"><span>8.</span>派修回報功能</a></li>
+              <li><a href="#"><span>9.</span>派修紀錄查詢</a></li>
+              <li><a href="#"><span>10.</span>權限管理</a></li>
+              <li><a href="#"><span>11.</span>角色管理</a></li>
+              <li><a href="#"><span>12.</span>功能管理</a></li>
+              <li><a href="#"><span>13.</span>參數設定</a></li>
             </ul>
           </nav>
         </div>
       </header>
       <!-- main -->
       <div class="main">
+        <!-- 狀態、燈號fixed -->
         <section class="keeptop">
           <div class="data_monitor">
             <div class="col">
@@ -86,7 +94,7 @@
               <span class="state_Y">Y</span>
             </div>
           </div>
-          <!-- <div class="col type_A">
+          <div class="col type_A">
             <h4><span><img src="images/icon_RAM.svg" alt=""></span>記憶體<br><b>異常事件</b></h4>
             <div class="data">2</div>
             <div class="ball">
@@ -103,23 +111,7 @@
             </div>
           </div>
           <div class="col type_A">
-            <h4><span><img src="images/icon_data.svg" alt=""></span>網路介面流量<br><b>異常事件</b></h4>
-            <div class="data">2</div>
-            <div class="ball">
-              <span class="state_R">R</span>
-              <span class="state_Y">Y</span>
-            </div>
-          </div> -->
-          <div class="col type_B">
-            <h4><span><img src="images/icon_CPU.svg" alt=""></span>資料庫<br><b>異常事件</b></h4>
-            <div class="data">2</div>
-            <div class="ball">
-              <span class="state_R">R</span>
-              <span class="state_Y">Y</span>
-            </div>
-          </div>
-          <!-- <div class="col type_B">
-            <h4><span><img src="images/icon_CPU.svg" alt=""></span>資料庫交易紀錄<br><b>異常事件</b></h4>
+            <h4><span><img src="images/icon_UI.svg" alt=""></span>網路介面流量<br><b>異常事件</b></h4>
             <div class="data">2</div>
             <div class="ball">
               <span class="state_R">R</span>
@@ -127,31 +119,23 @@
             </div>
           </div>
           <div class="col type_B">
-            <h4><span><img src="images/icon_CPU.svg" alt=""></span>資料庫空間<br><b>異常事件</b></h4>
-            <div class="data">2</div>
-            <div class="ball">
-              <span class="state_R">R</span>
-              <span class="state_Y">Y</span>
-            </div>
-          </div> -->
-          <div class="col type_C">
-            <h4><span><img src="images/icon_CPU.svg" alt=""></span>對外連結<br><b>異常事件</b></h4>
+            <h4><span><img src="images/icon_data.svg" alt=""></span>資料庫<br><b>異常事件</b></h4>
             <div class="data">2</div>
             <div class="ball">
               <span class="state_R">R</span>
               <span class="state_Y">Y</span>
             </div>
           </div>
-          <!-- <div class="col type_C">
-            <h4><span><img src="images/icon_CPU.svg" alt=""></span>系統檢核<br><b>異常事件</b></h4>
+          <div class="col type_B">
+            <h4><span><img src="images/icon_exchange.svg" alt=""></span>資料庫交易紀錄<br><b>異常事件</b></h4>
             <div class="data">2</div>
             <div class="ball">
               <span class="state_R">R</span>
               <span class="state_Y">Y</span>
             </div>
           </div>
-          <div class="col type_C">
-            <h4><span><img src="images/icon_CPU.svg" alt=""></span>設備狀態<br><b>異常事件</b></h4>
+          <div class="col type_B">
+            <h4><span><img src="images/icon_cube.svg" alt=""></span>資料庫空間<br><b>異常事件</b></h4>
             <div class="data">2</div>
             <div class="ball">
               <span class="state_R">R</span>
@@ -159,7 +143,7 @@
             </div>
           </div>
           <div class="col type_C">
-            <h4><span><img src="images/icon_CPU.svg" alt=""></span>連線數<br><b>異常事件</b></h4>
+            <h4><span><img src="images/icon_link.svg" alt=""></span>對外連結<br><b>異常事件</b></h4>
             <div class="data">2</div>
             <div class="ball">
               <span class="state_R">R</span>
@@ -167,13 +151,37 @@
             </div>
           </div>
           <div class="col type_C">
-            <h4><span><img src="images/icon_CPU.svg" alt=""></span>ICMP<br><b>異常事件</b></h4>
+            <h4><span><img src="images/icon_search.svg" alt=""></span>系統檢核<br><b>異常事件</b></h4>
             <div class="data">2</div>
             <div class="ball">
               <span class="state_R">R</span>
               <span class="state_Y">Y</span>
             </div>
-          </div> -->
+          </div>
+          <div class="col type_C">
+            <h4><span><img src="images/icon_state.svg" alt=""></span>設備狀態<br><b>異常事件</b></h4>
+            <div class="data">2</div>
+            <div class="ball">
+              <span class="state_R">R</span>
+              <span class="state_Y">Y</span>
+            </div>
+          </div>
+          <div class="col type_C">
+            <h4><span><img src="images/icon_links.svg" alt=""></span>連線數<br><b>異常事件</b></h4>
+            <div class="data">2</div>
+            <div class="ball">
+              <span class="state_R">R</span>
+              <span class="state_Y">Y</span>
+            </div>
+          </div>
+          <div class="col type_C">
+            <h4><span><img src="images/icon_clock.svg" alt=""></span>ICMP<br><b>異常事件</b></h4>
+            <div class="data">2</div>
+            <div class="ball">
+              <span class="state_R">R</span>
+              <span class="state_Y">Y</span>
+            </div>
+          </div>
         </section>
         <!-- 訊息欄 -->
         <!-- 1、slider -->
@@ -271,6 +279,51 @@
               </div> -->
             </div>
           </div>
+          <div class="stack">
+            <div class="infoSlider">
+              <div class="col state_R">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">記憶體 - 1*</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+            </div>
+          </div>
+          <div class="stack">
+            <div class="infoSlider">
+              <div class="col state_R">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">磁碟空間 - 1*</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+            </div>
+          </div>
+          <div class="stack">
+            <div class="infoSlider">
+              <div class="col state_R">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">網路介面流量 - 1*</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+            </div>
+          </div>
           <!-- 第二組：資料庫 -->
           <div class="stack">
             <div class="infoSlider">
@@ -364,6 +417,36 @@
               </div>
             </div>
           </div>
+          <div class="stack">
+            <div class="infoSlider">
+              <div class="col state_R">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">資料庫交易紀錄 - 1*</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+            </div>
+          </div>
+          <div class="stack">
+            <div class="infoSlider">
+              <div class="col state_R">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">資料庫空間 - 1*</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+            </div>
+          </div>
           <!-- 第三組：對外連結 -->
           <div class="stack">
             <div class="infoSlider">
@@ -448,6 +531,66 @@
                 <a href="#" class="pie">
                   <span class="state">系統狀態</span>
                   <b class="sub_title">對外連結 - 8</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+            </div>
+          </div>
+          <div class="stack">
+            <div class="infoSlider">
+              <div class="col state_R">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">系統檢核 - 1*</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+            </div>
+          </div>
+          <div class="stack">
+            <div class="infoSlider">
+              <div class="col state_R">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">設備狀態 - 1*</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+            </div>
+          </div>
+          <div class="stack">
+            <div class="infoSlider">
+              <div class="col state_R">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">連線數 - 1*</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+            </div>
+          </div>
+          <div class="stack">
+            <div class="infoSlider">
+              <div class="col state_R">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">ICMP - 1*</b>
                   <div class="circle"></div>
                   <span class="data_alarm">告警值<br>95%</span>
                   <span class="data_basic">門檻值<br>90%</span>
@@ -657,7 +800,7 @@
               </div>
             </div>
             <div class="col type_C">
-              <h4><span><img src="images/icon_UI.svg" alt=""></span>第三分類配色示意</h4>
+              <h4><span><img src="images/icon_link.svg" alt=""></span>第三分類配色示意</h4>
               <div class="info">
                 <b>應用系統入口平台（ AP1 ） </b>
                 <div class="state_R">

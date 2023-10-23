@@ -29,6 +29,9 @@ $m-gutter: 4px; // Flex grid system default margin
 .setCenter{
     width: 70%;
     margin: 3em auto !important;
+    @include screen('mobile') {
+        width: 100%;
+    }
 }
 // checkswitch
 .checkSwitch {
@@ -495,6 +498,7 @@ select::-ms-expand {
             max-width: calc(100% - .6em);
             flex-basis: calc(100% - .6em);
             margin: 0 .3em;
+            text-align: left;
             @include gutter(0);
         }
         +.form_content {
