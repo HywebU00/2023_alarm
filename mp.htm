@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="no-js">
+  <head>
+    <meta name="robots" content="noindex" />
+    <!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>安控告警平台</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- slick css-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+    <!-- 燈箱facybox -->
+    <!-- <link rel="stylesheet" type="text/css" href="vendor/fancybox/jquery.fancybox.min.css" /> -->
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/hyui.css" />
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- wrapper Start -->
+    <div class="wrapper">
+      <!-- header -->
+      <header class="header">
+        <div class="container">
+          <h1>
+            <a href="index.htm"><img src="images/logo.svg" alt="安控告警平台" /></a>
+          </h1>
+          <!-- menu -->
+          <button type="button" class="sidebarCtrl">側欄選單<span></span><span></span><span></span></button>
+          <nav class="menu" role="navigation" aria-label="Header的導航列">
+            <ul>
+              <li><a href="#" class="act"><img src="images/icon_Home.svg" alt="">安控儀表板</a></li>
+              <li><a href="#"><img src="images/icon_Analyze.svg" alt="">主機監控設定維護</a></li>
+              <li><a href="#"><img src="images/icon_Account.svg" alt="">主機權限管理</a></li>
+              <li><a href="#"><img src="images/icon_ActivityHistory.svg" alt="">監控歷史紀錄檔查詢</a></li>
+              <li><a href="#"><img src="images/icon_LowConnection.svg" alt="">網路流量查詢</a></li>
+              <li><a href="#"><img src="images/icon_Support.svg" alt="">派修回報功能</a></li>
+              <li><a href="#"><img src="images/icon_Worker.svg" alt="">派修人員維護</a></li>
+              <li><a href="#"><img src="images/icon_Settings.svg" alt="">報修清單查詢</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- main -->
+      <div class="main">
+        <section class="keeptop">
+          <div class="data_monitor">
+            <div class="col">
+              <span class="sub_title"><b>設備</b><br>異常數</span>
+              <span class="data"><b>2</b>/59</span>
+            </div>
+            <div class="col">
+              <span class="sub_title"><b>系統</b><br>異常數</span>
+              <span class="data"><b>2</b>/30</span>
+            </div>
+            <div class="col">
+              <span class="sub_title">系統<br><b>健康度</b></span>
+              <span class="data"><b>93%</b></span>
+            </div>
+          </div>
+          <div class="data_state">
+              <span>系統<br>即時狀態</span>
+              <section>
+                <div class="ball">
+                  <span class="state_R">1</span>
+                  <span class="state_Y">2</span>
+                  <span class="state_G">3</span>
+                </div>
+                <p>2023/10/06  16:38:00</p>
+              </section>
+          </div>
+        </section>
+        <!-- scrollbar -->
+        <section class="events">
+          <div class="col type_A">
+            <h4><span><img src="images/icon_CPU.svg" alt=""></span>CPU<br><b>異常事件</b></h4>
+            <div class="data">2</div>
+            <div class="ball">
+              <span class="state_R">R</span>
+              <span class="state_Y">Y</span>
+            </div>
+          </div>
+          <!-- <div class="col type_A">
+            <h4><span><img src="images/icon_RAM.svg" alt=""></span>記憶體<br><b>異常事件</b></h4>
+            <div class="data">2</div>
+            <div class="ball">
+              <span class="state_R">R</span>
+              <span class="state_Y">Y</span>
+            </div>
+          </div>
+          <div class="col type_A">
+            <h4><span><img src="images/icon_disk.svg" alt=""></span>磁碟空間<br><b>異常事件</b></h4>
+            <div class="data">2</div>
+            <div class="ball">
+              <span class="state_R">R</span>
+              <span class="state_Y">Y</span>
+            </div>
+          </div>
+          <div class="col type_A">
+            <h4><span><img src="images/icon_data.svg" alt=""></span>網路介面流量<br><b>異常事件</b></h4>
+            <div class="data">2</div>
+            <div class="ball">
+              <span class="state_R">R</span>
+              <span class="state_Y">Y</span>
+            </div>
+          </div> -->
+          <div class="col type_B">
+            <h4><span><img src="images/icon_CPU.svg" alt=""></span>資料庫<br><b>異常事件</b></h4>
+            <div class="data">2</div>
+            <div class="ball">
+              <span class="state_R">R</span>
+              <span class="state_Y">Y</span>
+            </div>
+          </div>
+          <!-- <div class="col type_B">
+            <h4><span><img src="images/icon_CPU.svg" alt=""></span>資料庫交易紀錄<br><b>異常事件</b></h4>
+            <div class="data">2</div>
+            <div class="ball">
+              <span class="state_R">R</span>
+              <span class="state_Y">Y</span>
+            </div>
+          </div>
+          <div class="col type_B">
+            <h4><span><img src="images/icon_CPU.svg" alt=""></span>資料庫空間<br><b>異常事件</b></h4>
+            <div class="data">2</div>
+            <div class="ball">
+              <span class="state_R">R</span>
+              <span class="state_Y">Y</span>
+            </div>
+          </div> -->
+          <div class="col type_C">
+            <h4><span><img src="images/icon_CPU.svg" alt=""></span>對外連結<br><b>異常事件</b></h4>
+            <div class="data">2</div>
+            <div class="ball">
+              <span class="state_R">R</span>
+              <span class="state_Y">Y</span>
+            </div>
+          </div>
+          <!-- <div class="col type_C">
+            <h4><span><img src="images/icon_CPU.svg" alt=""></span>系統檢核<br><b>異常事件</b></h4>
+            <div class="data">2</div>
+            <div class="ball">
+              <span class="state_R">R</span>
+              <span class="state_Y">Y</span>
+            </div>
+          </div>
+          <div class="col type_C">
+            <h4><span><img src="images/icon_CPU.svg" alt=""></span>設備狀態<br><b>異常事件</b></h4>
+            <div class="data">2</div>
+            <div class="ball">
+              <span class="state_R">R</span>
+              <span class="state_Y">Y</span>
+            </div>
+          </div>
+          <div class="col type_C">
+            <h4><span><img src="images/icon_CPU.svg" alt=""></span>連線數<br><b>異常事件</b></h4>
+            <div class="data">2</div>
+            <div class="ball">
+              <span class="state_R">R</span>
+              <span class="state_Y">Y</span>
+            </div>
+          </div>
+          <div class="col type_C">
+            <h4><span><img src="images/icon_CPU.svg" alt=""></span>ICMP<br><b>異常事件</b></h4>
+            <div class="data">2</div>
+            <div class="ball">
+              <span class="state_R">R</span>
+              <span class="state_Y">Y</span>
+            </div>
+          </div> -->
+        </section>
+        <!-- 訊息欄 -->
+        <!-- 1、slider -->
+        <section class="info_area">
+          <!-- 第一組：CPU -->
+          <div class="stack">
+            <div class="infoSlider">
+              <div class="col state_R">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">CPU - 1*</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+              <div class="col state_Y">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">CPU - 2</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+              <div class="col state_R">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">CPU - 3</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+              <!-- <div class="col state_Y">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">CPU - 4</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU</b>
+              </div>
+              <div class="col state_R">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">CPU - 5</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+              <div class="col state_Y">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">CPU - 6</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+              <div class="col state_R">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">CPU - 7</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+              <div class="col state_Y">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">CPU - 8</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div> -->
+            </div>
+          </div>
+          <!-- 第二組：資料庫 -->
+          <div class="stack">
+            <div class="infoSlider">
+              <div class="col state_R">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">資料庫 - 1*</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+              <div class="col state_Y">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">資料庫 - 2</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+              <div class="col state_R">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">資料庫 - 3</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+              <div class="col state_Y">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">資料庫 - 4</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU</b>
+              </div>
+              <div class="col state_R">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">資料庫 - 5</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+              <div class="col state_Y">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">資料庫 - 6</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+              <div class="col state_R">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">資料庫 - 7</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+              <div class="col state_Y">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">資料庫 - 8</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+            </div>
+          </div>
+          <!-- 第三組：對外連結 -->
+          <div class="stack">
+            <div class="infoSlider">
+              <div class="col state_R">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">對外連結 - 1*</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+              <div class="col state_Y">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">對外連結 - 2</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+              <div class="col state_R">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">對外連結 - 3</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+              <div class="col state_Y">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">對外連結 - 4</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU</b>
+              </div>
+              <div class="col state_R">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">對外連結 - 5</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+              <div class="col state_Y">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">對外連結 - 6</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+              <div class="col state_R">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">對外連結 - 7</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+              <div class="col state_Y">
+                <a href="#" class="pie">
+                  <span class="state">系統狀態</span>
+                  <b class="sub_title">對外連結 - 8</b>
+                  <div class="circle"></div>
+                  <span class="data_alarm">告警值<br>95%</span>
+                  <span class="data_basic">門檻值<br>90%</span>
+                  <span class="data_ver">10.10.0.2</span>
+                </a>
+                <b>* 關連異常事件 - CPU、記憶體、資料庫</b>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 2、純訊息 -->
+        <section class="info_area">
+          <p>目前沒有異常事件。</p>
+        </section>
+        <!-- 資源使用情形 -->
+        <section>
+          <h3 class="mainTitle">資源使用情形</h3>
+          <div class="usage">
+            <div class="col type_A">
+              <h4><span><img src="images/icon_CPU.svg" alt=""></span>第一分類配色 CPU</h4>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_R">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_Y">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_G">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_G">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_G">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+            </div>
+            <div class="col type_A">
+              <h4><span><img src="images/icon_disk.svg" alt=""></span>磁碟空間</h4>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_R">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_Y">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_G">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_G">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_G">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+            </div>
+            <div class="col type_A">
+              <h4><span><img src="images/icon_RAM.svg" alt=""></span>記憶體</h4>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_R">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_Y">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_G">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_G">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_G">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+            </div>
+            <div class="col type_B">
+              <h4><span><img src="images/icon_data.svg" alt=""></span>第二分類配色 資料庫</h4>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_R">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_Y">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_G">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_G">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_G">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+            </div>
+            <div class="col type_A">
+              <h4><span><img src="images/icon_UI.svg" alt=""></span>網路介面</h4>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_R">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_Y">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_G">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_G">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_G">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+            </div>
+            <div class="col type_C">
+              <h4><span><img src="images/icon_UI.svg" alt=""></span>第三分類配色示意</h4>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_R">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_Y">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_G">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_G">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+              <div class="info">
+                <b>應用系統入口平台（ AP1 ） </b>
+                <div class="state_G">
+                  <div class="bar"><span style="width: 30%;"></span></div>
+                  <div class="data"><b>95</b>&nbsp;/&nbsp;100</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <!-- JQ -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- 外掛 plugin js -->
+    <script src="vendor/jquery.easing.min.js"></script>
+    <!-- ease -->
+    <script src="vendor/slick/slick.min.js "></script>
+    <!-- slick -->
+    <!-- <script src="vendor/lazyload/lazyload.js"></script> -->
+    <!-- lazyload -->
+    <!-- <script src="vendor/picturefill/picturefill.min.js" async></script> -->
+    <!-- picturefill -->
+    <!-- <script src="vendor/scrolltable/jquery.scroltable.min.js"></script> -->
+    <!-- scrolltable -->
+    <!-- sticky-sidebar -->
+    <!-- <script src="vendor/sticky-sidebar/sticky-sidebar.js"></script>
+    <script src="vendor/sticky-sidebar/ResizeSensor.js"></script> -->
+    <!-- fancy -->
+    <!-- <script src="vendor/fancybox/jquery.fancybox.min.js"></script> -->
+    <!-- hyUI -->
+    <!-- <script src="js/hyui.js"></script> -->
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+  </body>
+</html>

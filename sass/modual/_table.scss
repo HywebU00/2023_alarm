@@ -2,21 +2,39 @@
 table {
     width: 100%;
     border-collapse: collapse;
+    color: #fff;
     @include screen('xs_mobile') {
         width: 100%;
     }
-    caption {
-        font-weight: bold;
-        text-align: left;
-        font-size: 1.125rem;
-        margin-bottom: .5em;
-        .summary {
-            display: block;
-            font-size: 1em;
-            font-weight: normal;
+    // caption {
+    //     font-weight: bold;
+    //     text-align: left;
+    //     font-size: 1.125rem;
+    //     margin-bottom: .5em;
+    //     .summary {
+    //         display: block;
+    //         font-size: 1em;
+    //         font-weight: normal;
+    //     }
+    // }
+
+    thead{
+        th{
+            border-bottom: 1px solid #6B6F90;
         }
     }
-    th, // td:not(.gsib_b,.gsc-search-button) {
+    tbody{
+        tr{
+            &:nth-child(even){
+                background: rgb(73 76 109 / 50%);
+            }
+            &:hover{
+                background: #4B4E75 !important;
+            }
+        }
+    }
+
+    // th, td:not(.gsib_b,.gsc-search-button) {
     //     padding: .5em;
     //     text-align: left;
     // }
@@ -27,34 +45,37 @@ table {
     //         word-break: break-all;
     //     }
     // }
-    td {
-        padding: .5em;
+    
+    th, td {
         text-align: left;
     }
     td {
-        border: #ddd 1px solid;
-        word-break: break-all;
+        // border: #ddd 1px solid;
+        padding: .25em .5em;
+        // word-break: break-all;
+        // text-align: center;
         a {
             word-break: break-all;
         }
     }
     th {
-        background-color: #F3F3F3;
-        color: #333;
-        border: #DDD 1px solid;
-        text-align: center;
+        // background-color: #F3F3F3;
+        // color: #333;
+        // border: #DDD 1px solid;
+        padding: .5em;
+        // text-align: center;
         white-space: nowrap;
     }
-    &.table_hover {
-        tr:hover {
-            background: #F3F3F3;
-        }
-    }
-    &.table_sprite {
-        tr:nth-child(even) {
-            background: #F5F5F5;
-        }
-    }
+    // &.table_hover {
+    //     tr:hover {
+    //         background: #F3F3F3;
+    //     }
+    // }
+    // &.table_sprite {
+    //     tr:nth-child(even) {
+    //         background: #F5F5F5;
+    //     }
+    // }
 }
 
 .table_list {
@@ -188,6 +209,8 @@ table {
 
 .scroltable-container {
     overflow: auto;
+    max-height: 300px;
+    overflow-y: scroll;
 }
 
 .scroltable-nav {

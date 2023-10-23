@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="no-js">
+  <head>
+    <meta name="robots" content="noindex" />
+    <!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>安控告警平台</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- slick css-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+    <!-- 燈箱facybox -->
+    <!-- <link rel="stylesheet" type="text/css" href="vendor/fancybox/jquery.fancybox.min.css" /> -->
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/hyui.css" />
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- wrapper Start -->
+    <div class="wrapper">
+      <!-- header -->
+      <header class="header">
+        <div class="container">
+          <h1>
+            <a href="index.htm"><img src="images/logo.svg" alt="安控告警平台" /></a>
+          </h1>
+          <!-- menu -->
+          <button type="button" class="sidebarCtrl">側欄選單<span></span><span></span><span></span></button>
+          <nav class="menu" role="navigation" aria-label="Header的導航列">
+            <ul>
+              <li><a href="#" class="act"><img src="images/icon_Home.svg" alt="">安控儀表板</a></li>
+              <li><a href="#"><img src="images/icon_Analyze.svg" alt="">主機監控設定維護</a></li>
+              <li><a href="#"><img src="images/icon_Account.svg" alt="">主機權限管理</a></li>
+              <li><a href="#"><img src="images/icon_ActivityHistory.svg" alt="">監控歷史紀錄檔查詢</a></li>
+              <li><a href="#"><img src="images/icon_LowConnection.svg" alt="">網路流量查詢</a></li>
+              <li><a href="#"><img src="images/icon_Support.svg" alt="">派修回報功能</a></li>
+              <li><a href="#"><img src="images/icon_Worker.svg" alt="">派修人員維護</a></li>
+              <li><a href="#"><img src="images/icon_Settings.svg" alt="">報修清單查詢</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- main -->
+      <div class="main">
+        <section class="keeptop">
+          <div class="data_monitor">
+            <div class="col">
+              <span class="sub_title"><b>設備</b><br>異常數</span>
+              <span class="data"><b>2</b>/59</span>
+            </div>
+            <div class="col">
+              <span class="sub_title"><b>系統</b><br>異常數</span>
+              <span class="data"><b>2</b>/30</span>
+            </div>
+            <div class="col">
+              <span class="sub_title">系統<br><b>健康度</b></span>
+              <span class="data"><b>93%</b></span>
+            </div>
+          </div>
+          <div class="data_state">
+              <span>系統<br>即時狀態</span>
+              <section>
+                <div class="ball">
+                  <span class="state_R">1</span>
+                  <span class="state_Y">2</span>
+                  <span class="state_G">3</span>
+                </div>
+                <p>2023/10/06  16:38:00</p>
+              </section>
+          </div>
+        </section>
+        <!-- 內容放進這裡 -->
+        <section class="center_block">
+          <h3 class="innerTitle">主機監控設定維護</h3>
+          <div class="breadcrumb">
+            <ul>
+              <li><a href="#">首頁</a></li>
+              <li><a href="#">節點</a></li>
+              <li>節點</li>
+            </ul>
+          </div>
+          <!-- 表單 1：拘束在中間 setCenter -->
+          <div class="flex-form setCenter">
+            <!-- input -->
+            <div class="form_grp">
+              <!-- 使用aria-required屬性指出必填的表單欄位 -->
+              <label for="fake-legend" class="form_title" aria-required="true"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>input</label>
+              <div class="form_content">
+                <input type="text" id="fake-legend" placeholder="請輸入文字" />
+              </div>
+            </div>
+            <!-- select -->
+            <div class="form_grp">
+              <label for="fake-legend" class="form_title" aria-required="true"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>select</label>
+              <div class="form_content">
+                <select name="" id="fake-legend">
+                  <option value="">項目1</option>
+                  <option value="">項目2</option>
+                  <option value="">項目3</option>
+                  <option value="">項目4</option>
+                </select>
+              </div>
+            </div>
+            <!-- mix -->
+            <div class="form_grp">
+              <!-- 使用aria-required屬性指出必填的表單欄位 -->
+              <label for="fake-legend" class="form_title" aria-required="true"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>input</label>
+              <div class="form_content form_inline">
+                <select name="" id="fake-legend">
+                  <option value="">項目1</option>
+                  <option value="">項目2</option>
+                  <option value="">項目3</option>
+                  <option value="">項目4</option>
+                </select>
+                <input type="text" id="fake-legend" placeholder="請輸入文字" />
+              </div>
+            </div>
+            <!-- 按鈕 -->
+            <div class="btn_grp form_inline">
+              <button class="btn btn-reset">清除</button>
+              <button class="btn btn-submit">送出/查詢</button>
+            </div>
+          </div>
+          <!-- table 1：scroll table-->
+          <div class="infoBg_1">
+            <span class="table_note">共8筆</span>
+            <div class="scroltable-container">
+              <table class="scroltable">
+                <thead>
+                  <tr>
+                    <th><a href="#">全選</a></th>
+                    <th>項次</th>
+                    <th>機關名稱</th>
+                    <th>單位名稱</th>
+                    <th>系統名稱</th>
+                    <th>主機名稱</th>
+                    <th>IP</th>
+                    <th>功能</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th><input type="checkbox" name="" value=""></th>
+                    <td>1</td>
+                    <td>內政部</td>
+                    <td>資訊服務司</td>
+                    <td>應用系統入口平台</td>
+                    <td>AP_10.10.0.2</td>
+                    <td>10.10.0.2</td>
+                    <td>
+                      <button class="btn_round">檢視</button>
+                      <button class="btn_round">維護</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><input type="checkbox" name="" value=""></th>
+                    <td>2</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>
+                      <button class="btn_round">檢視</button>
+                      <button class="btn_round">維護</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><input type="checkbox" name="" value=""></th>
+                    <td>3</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>
+                      <button class="btn_round">檢視</button>
+                      <button class="btn_round">維護</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><input type="checkbox" name="" value=""></th>
+                    <td>4</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>
+                      <button class="btn_round">檢視</button>
+                      <button class="btn_round">維護</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><input type="checkbox" name="" value=""></th>
+                    <td>5</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>
+                      <button class="btn_round">檢視</button>
+                      <button class="btn_round">維護</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><input type="checkbox" name="" value=""></th>
+                    <td>6</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>
+                      <button class="btn_round">檢視</button>
+                      <button class="btn_round">維護</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><input type="checkbox" name="" value=""></th>
+                    <td>7</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>
+                      <button class="btn_round">檢視</button>
+                      <button class="btn_round">維護</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><input type="checkbox" name="" value=""></th>
+                    <td>8</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>td 資料</td>
+                    <td>
+                      <button class="btn_round">檢視</button>
+                      <button class="btn_round">維護</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- 按鈕 -->
+          <div class="btn_grp">
+            <button class="btn btn-reset">一鍵套用</button>
+          </div>
+          <!--  -->
+          <h4 class="title">主機資訊</h4>
+          <!-- table 2 -->
+          <div class="infoBg_2">
+            <div class="scroltable-container">
+              <table class="scroltable">
+                <tbody>
+                  <tr>
+                    <th>機關名稱</th>
+                    <td>內政部</td>
+                    <th>機關名稱</th>
+                    <td>應用系統入口管理平台</td>
+                  </tr>
+                  <tr>
+                    <th>IP</th>
+                    <td>10.10.0.2</td>
+                    <th>作業系統版本</th>
+                    <td>Linux</td>
+                  </tr>
+                  <tr>
+                    <th>CPU資源（core）</th>
+                    <td>4</td>
+                    <th>記憶體資源（GB）</th>
+                    <td>48</td>
+                  </tr>
+                  <tr>
+                    <th>儲存資源（GB）</th>
+                    <td>500</td>
+                    <th>應用伺服器版本</th>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>系統URL</th>
+                    <td colspan="3">https://</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!--  -->
+          <h4 class="title">監控內容設定</h4>
+          <div class="infoBg_3">
+            <div class="flex-form form-column">
+              <div class="flex-col-equal-2">
+                <div class="form_grp">
+                  <label for="inputSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>系統名稱</label>
+                  <div class="form_content">
+                    <select name="" id="fake-legend">
+                      <option value="">項目1</option>
+                      <option value="">項目2</option>
+                      <option value="">項目3</option>
+                      <option value="">項目4</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form_grp">
+                  <label for="inputSample2" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>主機名稱</label>
+                  <div class="form_content">
+                    <input name="username" id="inputSample2" type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="form_grp">
+                  <label for="inputSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>啟用監控</label>
+                  <div class="form_content">
+                    <div class="checkSwitch">
+                      <label>
+                        <input name="checkboxSample1" type="checkbox" value="">
+                        <div class="checkSwitch_switch"></div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form_grp">
+                  <label for="inputSample" class="form_title">顯示於監控看板</label>
+                  <div class="form_content">
+                    <div class="checkSwitch">
+                      <label>
+                        <input name="checkboxSample1" type="checkbox" value="">
+                        <div class="checkSwitch_switch"></div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form_grp">
+                  <label for="inputSample2" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>監控頻率(分)</label>
+                  <div class="form_content">
+                    <input name="username" id="inputSample2" type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="form_grp">
+                  <label for="inputSample2" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>持續異常再寄信次數</label>
+                  <div class="form_content">
+                    <input name="username" id="inputSample2" type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="form_grp">
+                    <label for="fake-legend" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>監控方式</label>
+                    <div class="form_content" id="fake-legend">
+                      <div class="check_grp form_inline">
+                        <label><input type="checkbox" name="" value="" checked="">項目1</label>
+                        <label><input type="checkbox" name="" value="">項目2</label>
+                        <label><input type="checkbox" name="" value="">項目3</label>
+                        <label><input type="checkbox" name="" value="">項目4</label>
+                      </div>
+                    </div>
+                </div>
+                <div class="form_grp">
+                  <label for="fake-legend" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>控Agent網址</label>
+                  <div class="form_content">
+                    <input type="text" id="fake-legend" placeholder="請輸入文字">
+                  </div>
+                </div>
+                <div class="form_grp">
+                  <label for="inputSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>流量方式</label>
+                  <div class="form_content">
+                    <div class="radio_grp form_inline">
+                        <label><input type="radio" name="sampleRadio" value="" checked="">項目1</label>
+                        <label><input type="radio" name="sampleRadio" value="">項目2</label>
+                        <label><input type="radio" name="sampleRadio" value="">項目3</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="form_grp">
+                  <label for="fake-legend" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>監控方式</label>
+                  <div class="form_content" id="fake-legend">
+                    <div class="check_grp form_inline">
+                      <label><input type="checkbox" name="" value="" checked="">項目1</label>
+                      <label><input type="checkbox" name="" value="">項目2</label>
+                      <label><input type="checkbox" name="" value="">項目3</label>
+                      <label><input type="checkbox" name="" value="">項目4</label>
+                    </div>
+                  </div>
+              </div>
+              <div class="form_grp">
+                <label for="fake-legend" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>控Agent網址</label>
+                <div class="form_content">
+                  <input type="text" id="fake-legend" placeholder="請輸入文字">
+                </div>
+              </div>
+              <div class="form_grp">
+                <label for="inputSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>流量方式</label>
+                <div class="form_content">
+                  <div class="radio_grp form_inline">
+                      <label><input type="radio" name="sampleRadio" value="" checked="">項目1</label>
+                      <label><input type="radio" name="sampleRadio" value="">項目2</label>
+                      <label><input type="radio" name="sampleRadio" value="">項目3</label>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <!--  -->
+          <h4 class="title">SNMP設定</h4>
+          <div class="infoBg_3">
+            <div class="flex-form form-column">
+              <div class="flex-col-equal-2">
+                <div class="form_grp">
+                  <label for="inputSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>SNMP版本</label>
+                  <div class="form_content">
+                    <div class="radio_grp form_inline">
+                        <label><input type="radio" name="sampleRadio2" value="" checked="">項目1</label>
+                        <label><input type="radio" name="sampleRadio2" value="">項目2</label>
+                        <label><input type="radio" name="sampleRadio2" value="">項目3</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form_grp">
+                  <label for="inputSample2" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>TCP/UDP</label>
+                  <div class="form_content">
+                    <div class="radio_grp form_inline">
+                        <label><input type="radio" name="sampleRadio3" value="" checked="">項目1</label>
+                        <label><input type="radio" name="sampleRadio3" value="">項目2</label>
+                        <label><input type="radio" name="sampleRadio3" value="">項目3</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form_grp">
+                  <label for="inputSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>Auth Level</label>
+                  <div class="form_content">
+                    <select name="" id="fake-legend">
+                      <option value="">項目1</option>
+                      <option value="">項目2</option>
+                      <option value="">項目3</option>
+                      <option value="">項目4</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form_grp">
+                  <label for="inputSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>Auth Algorithm</label>
+                  <div class="form_content">
+                    <select name="" id="fake-legend">
+                      <option value="">項目1</option>
+                      <option value="">項目2</option>
+                      <option value="">項目3</option>
+                      <option value="">項目4</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form_grp">
+                  <label for="inputSample2" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>Auth User Name</label>
+                  <div class="form_content">
+                    <input name="username" id="inputSample2" type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="form_grp">
+                  <label for="inputSample2" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>Auth Password</label>
+                  <div class="form_content">
+                    <input name="username" id="inputSample2" type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="form_grp">
+                  <label for="inputSample2" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>Crypto Password</label>
+                  <div class="form_content">
+                    <input name="username" id="inputSample2" type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="form_grp">
+                  <label for="inputSample" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>Crypto Algorithm</label>
+                  <div class="form_content">
+                    <select name="" id="fake-legend">
+                      <option value="">項目1</option>
+                      <option value="">項目2</option>
+                      <option value="">項目3</option>
+                      <option value="">項目4</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <h4 class="title">監控警示值設定</h4>
+          <div class="infoBg_1">
+            <span class="table_note">共4筆</span>
+            <div class="scroltable-container">
+              <table class="scroltable">
+                <thead>
+                  <tr>
+                    <th valign="top">監控與否<br><a href="#">全選</a></th>
+                    <th valign="top">項次</th> 
+                    <th valign="top">監控類別</th>
+                    <th valign="top">黃燈警示值</th>
+                    <th valign="top">黃燈轉紅燈</th>
+                    <th valign="top">紅燈警示值</th>
+                    <th valign="top">功能</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th><input type="checkbox" name="" value=""></th>
+                    <td>1</td>
+                    <td>CPU</td>
+                    <td><input type="text" id="" placeholder="" value="20">%</td>
+                    <td><input type="text" id="" placeholder="" value="20">次</td>
+                    <td><input type="text" id="" placeholder="" value="20">％</td>
+                    <td>
+                      <button class="btn_round">恢復預設</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><input type="checkbox" name="" value=""></th>
+                    <td>2</td>
+                    <td>資料庫</td>
+                    <td><input type="text" id="" placeholder="" value="4000">毫秒</td>
+                    <td><input type="text" id="" placeholder="" value="20">次</td>
+                    <td><input type="text" id="" placeholder="" value="8000">毫秒</td>
+                    <td>資料庫回應時間</td>
+                  </tr>
+                  <tr>
+                    <th><input type="checkbox" name="" value=""></th>
+                    <td>3</td>
+                    <td>服務</td>
+                    <td></td>
+                    <td><input type="text" id="" placeholder="" value="3">次</td>
+                    <td></td>
+                    <td>偵測Port是否正常啟用</td>
+                  </tr>
+                  <tr>
+                    <th><input type="checkbox" name="" value=""></th>
+                    <td>4</td>
+                    <td>系統檢核</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>API客製化偵測</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- 按鈕 -->
+          <div class="btn_grp">
+            <button class="btn btn-normal">回查詢頁</button>
+            <button class="btn btn-primary">儲存</button>
+          </div>
+        </section>
+      </div>
+    </div>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <!-- JQ -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- 外掛 plugin js -->
+    <script src="vendor/jquery.easing.min.js"></script>
+    <!-- ease -->
+    <script src="vendor/slick/slick.min.js "></script>
+    <!-- slick -->
+    <!-- <script src="vendor/lazyload/lazyload.js"></script> -->
+    <!-- lazyload -->
+    <!-- <script src="vendor/picturefill/picturefill.min.js" async></script> -->
+    <!-- picturefill -->
+    <!-- <script src="vendor/scrolltable/jquery.scroltable.min.js"></script> -->
+    <!-- scrolltable -->
+    <!-- sticky-sidebar -->
+    <!-- <script src="vendor/sticky-sidebar/sticky-sidebar.js"></script>
+    <script src="vendor/sticky-sidebar/ResizeSensor.js"></script> -->
+    <!-- fancy -->
+    <!-- <script src="vendor/fancybox/jquery.fancybox.min.js"></script> -->
+    <!-- hyUI -->
+    <!-- <script src="js/hyui.js"></script> -->
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+  </body>
+</html>
