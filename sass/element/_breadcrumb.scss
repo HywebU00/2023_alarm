@@ -5,8 +5,8 @@
     margin: 0 auto;
     ul {
         @include li-reset;
-        padding-left: 2em;
-        background: url(../images/icon_breadcrumb.svg) left 50% no-repeat;
+        padding-left: 4em;
+        background: url(../images/icon_breadcrumb.svg) 2em 50% no-repeat;
         li {
             display: inline-block;
             // margin: 0 .1em .1em 0px;

@@ -934,10 +934,11 @@ body::-webkit-scrollbar-track {
     // background: url(../images/bg_innerTitle.png) left top no-repeat;
     font-size: 125%;
     position: relative;
+    padding-left: 1.5em;
     &:after{
         content: '';
         position: absolute;
-        left: -30px;
+        left: 0;
         top: -20px;
         width: 100%;
         height: 95px;
