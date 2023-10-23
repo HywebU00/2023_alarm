@@ -5612,7 +5612,6 @@ body::-webkit-scrollbar-track {
 }
 .keeptop + section {
   margin-top: 120px;
-  height: 192px;
 }
 @media screen and (max-width: 1370px) {
   .keeptop {
@@ -5787,7 +5786,7 @@ body::-webkit-scrollbar-track {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   left: 50%;
-  bottom: -20px;
+  bottom: -18px;
   transform: translateX(-50%);
 }
 

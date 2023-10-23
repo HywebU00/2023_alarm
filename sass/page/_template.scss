@@ -408,7 +408,7 @@ body::-webkit-scrollbar-track {
 
     + section{
         margin-top: 120px;
-        height: 192px; // 切換時才不會忽高忽低
+        // height: 192px; // 切換時才不會忽高忽低
     }
 
     @media screen and (max-width: 1370px) {
@@ -600,7 +600,7 @@ body::-webkit-scrollbar-track {
                 border-left: 20px solid transparent;
                 border-right: 20px solid transparent;
                 left: 50%;
-                bottom: -20px;
+                bottom: -18px;
                 transform: translateX(-50%);
             }
         }
