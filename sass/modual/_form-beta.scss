@@ -355,7 +355,7 @@ select::-ms-expand {
         .tel {
             input[type="text"]:first-child,
             input[type="tel"]:first-child {
-                background: rgba(178, 236, 255, 0.2) url(../images/icon/icon_add.svg) no-repeat .5em center;
+                background: rgba(178, 236, 255, 0.2) url(../images/icon/icon_add2.svg) no-repeat .75em center;
                 background-size: 12px;
                 padding-left: 2em;
             }
@@ -569,7 +569,7 @@ select::-ms-expand {
             border-bottom: none;
             // 調整標題
             .form_title {
-                color: #008175;
+                color: #c5c5c5;
             }
             .form_content {
                 flex-shrink: 0;
@@ -600,7 +600,7 @@ select::-ms-expand {
                 .form_grp {
                     // 調整標題
                     .form_title {
-                        color: #222;
+                        color: #51cffb;
                         padding-bottom: 0;
                     }
                 }
@@ -1435,10 +1435,10 @@ input[type="number"] {
 // input＋selectk 的下拉arrow
 input[type="text"] {
     &.complex {
-        padding-right: 1em;
+        padding-right: 2.5em;
         border: 1px solid rgba(178, 236, 255, 0.2);
-        background: rgba(178, 236, 255, 0.2) url(../images/icon/icon_select_arrow.png) no-repeat right 8px center;
-        background-size: 16px;
+        background: rgba(178, 236, 255, 0.2) url(../images/basic/icon_select_arrow.png) no-repeat right 4px center;
+        background-size: 32px 16px;
         min-width: 50%;
     }
 }

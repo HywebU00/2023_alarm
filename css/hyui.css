@@ -2950,7 +2950,7 @@ select::-ms-expand {
 }
 .flex-form .form_grp .tel input[type=text]:first-child,
 .flex-form .form_grp .tel input[type=tel]:first-child {
-  background: rgba(178, 236, 255, 0.2) url(../images/icon/icon_add.svg) no-repeat 0.5em center;
+  background: rgba(178, 236, 255, 0.2) url(../images/icon/icon_add2.svg) no-repeat 0.75em center;
   background-size: 12px;
   padding-left: 2em;
 }
@@ -3161,7 +3161,7 @@ select::-ms-expand {
   border-bottom: none;
 }
 .flex-form .form_content .form_grp .form_title {
-  color: #008175;
+  color: #c5c5c5;
 }
 .flex-form .form_content .form_grp .form_content {
   flex-shrink: 0;
@@ -3197,7 +3197,7 @@ select::-ms-expand {
   }
 }
 .flex-form .form_content .form_grp .form_content .form_grp .form_title {
-  color: #222;
+  color: #51cffb;
   padding-bottom: 0;
 }
 .flex-form .form_content .form_grp:last-child {
@@ -4417,10 +4417,10 @@ input[type=number]:-moz-placeholder {
 }
 
 input[type=text].complex {
-  padding-right: 1em;
+  padding-right: 2.5em;
   border: 1px solid rgba(178, 236, 255, 0.2);
-  background: rgba(178, 236, 255, 0.2) url(../images/icon/icon_select_arrow.png) no-repeat right 8px center;
-  background-size: 16px;
+  background: rgba(178, 236, 255, 0.2) url(../images/basic/icon_select_arrow.png) no-repeat right 4px center;
+  background-size: 32px 16px;
   min-width: 50%;
 }
 
