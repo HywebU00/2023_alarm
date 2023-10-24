@@ -3197,7 +3197,7 @@ select::-ms-expand {
   }
 }
 .flex-form .form_content .form_grp .form_content .form_grp .form_title {
-  color: #51cffb;
+  color: #c9c9c9;
   padding-bottom: 0;
 }
 .flex-form .form_content .form_grp:last-child {
@@ -4601,13 +4601,13 @@ input[type=file] {
 }
 .form_content .form_grp.error .form_title,
 .form_content .form_grp.error label {
-  color: #b70000;
+  color: #55D4FF;
   font-weight: bold;
 }
 .form_content .form_grp.error input,
 .form_content .form_grp.error select,
 .form_content .form_grp.error textarea {
-  box-shadow: 0px 0px 0px 2px #b70000;
+  box-shadow: 0px 0px 0px 4px #55D4FF;
   border: transparent;
 }
 
