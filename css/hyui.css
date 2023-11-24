@@ -4468,7 +4468,7 @@ select {
 select option {
   outline: none;
   border: none;
-  color: red;
+  color: #222;
 }
 select:-moz-focusring {
   color: transparent;
